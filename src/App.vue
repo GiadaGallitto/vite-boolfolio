@@ -27,5 +27,4 @@ export default{
 @use 'bootstrap/scss/bootstrap.scss' as *;
 @use 'styles/general.scss' as *;
 
-
 </style>
