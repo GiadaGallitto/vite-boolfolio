@@ -45,8 +45,8 @@ export default {
       </div>
     </div>
 
-    <div class="row justify-content-between g-4">
-      <ProjectCard class="col-6 project" v-for="project in projects" 
+    <div class="row justify-content-around g-4">
+      <ProjectCard class="col-5 text-center" v-for="project in projects" 
       :author="project.author"
       :type="project.type"
       :technologies="project.technologies"
