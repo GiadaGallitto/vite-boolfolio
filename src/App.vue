@@ -22,7 +22,7 @@ export default{
     <AppHeader />
   </header>
 
-  <!-- <router-view></router-view> -->
+  <router-view></router-view>
 
   <!-- <main>
     <AppMain />
