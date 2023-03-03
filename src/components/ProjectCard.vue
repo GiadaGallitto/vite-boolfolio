@@ -1,5 +1,6 @@
 <script>
 import axios from 'axios';
+import SingleProject from '../pages/SingleProject.vue';
 
 export default {
     name: 'AppMain',
@@ -11,6 +12,7 @@ export default {
 
     props: {
         author: String,
+        slug: String,
         type: String,
         image: String,
         technologies: Array,
@@ -47,7 +49,9 @@ export default {
         <img :src="image" class="img-fluid" alt="project-image">
         <div class="card-body">
             <p class="card-text">{{ description }}</p>
-            <a href="#" class="btn btn-primary">Read more...</a>
+            <router-link class="btn btn-primary" :to="{name: 'project', params:{ slug: slug }}" >
+                Read more...
+            </router-link>
         </div>
         <div class="card-footer text-muted">
             <span><strong>Start date: </strong>{{ start_date }}</span>

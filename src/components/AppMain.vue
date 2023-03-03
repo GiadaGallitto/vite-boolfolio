@@ -48,6 +48,7 @@ export default {
     <div class="row justify-content-around g-4">
       <ProjectCard class="col-5 text-center" v-for="project in projects" 
       :author="project.author"
+      :slug="project.slug"
       :type="project.type"
       :technologies="project.technologies"
       :title="project.title"
