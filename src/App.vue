@@ -22,9 +22,11 @@ export default{
     <AppHeader />
   </header>
 
-  <main>
+  <!-- <router-view></router-view> -->
+
+  <!-- <main>
     <AppMain />
-  </main>
+  </main> -->
 </template>
 
 <style lang="scss">
